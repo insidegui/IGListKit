@@ -9,13 +9,23 @@ This release closes the [2.1.0 milestone](https://github.com/Instagram/IGListKit
 
 ### Enhancements
 
-- macOS support. Note: this is *only* for the Diffing components. There is **no support** for `NSCollectionView` at this time. [Guilherme Rambo](https://github.com/insidegui) [(#235)](https://github.com/Instagram/IGListKit/pull/235)
+- Added support for macOS. Note: this is *only* for the Diffing components. There is **no support** for `IGListAdapter`, `IGListSectionController`, and other components at this time. [Guilherme Rambo](https://github.com/insidegui) [(#235)](https://github.com/Instagram/IGListKit/pull/235)
+
+- Added a [macOS example](https://github.com/Instagram/IGListKit/tree/master/Examples/Examples-macOS) project. [Guilherme Rambo](https://github.com/insidegui) [(#337)](https://github.com/Instagram/IGListKit/pull/337)
 
 - Disables `prefetchEnabled` by default on `IGListCollectionView`. [Sven Bacia](https://github.com/svenbacia) [(#323)](https://github.com/Instagram/IGListKit/pull/323)
+
+- Working ranges now work with `IGListStackedSectionController`. [Ryan Nystrom](https://github.com/rnystrom) [(#356)](https://github.com/Instagram/IGListKit/pull/356)
 
 ### Fixes
 
 - Avoid `UICollectionView` crashes when queueing a reload and insert/delete on the same item as well as reloading an item in a section that is animating. [Ryan Nystrom](https://github.com/rnystrom) [(#325)](https://github.com/Instagram/IGListKit/pull/325)
+
+- Prevent adapter data source from deallocating after queueing an update. [Ryan Nystrom](https://github.com/rnystrom) [(4cc91a2)](https://github.com/Instagram/IGListKit/commit/4cc91a25c8b262953e4f2d8e5dc78ee15c6265b2)
+
+- Fix out-of-bounds bug when child section controllers in a stack remove cells. [Ryan Nystrom](https://github.com/rnystrom) [(#358)](https://github.com/Instagram/IGListKit/pull/358)
+
+- Fix a grid layout bug when item has full-width and iter-item spacing is not zero. [Bofei Zhu](https://github.com/zhubofei) [(#361)](https://github.com/Instagram/IGListKit/pull/361)
 
 2.0.0
 -----

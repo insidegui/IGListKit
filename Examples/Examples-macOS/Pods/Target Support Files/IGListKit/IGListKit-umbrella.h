@@ -3,18 +3,19 @@
 #endif
 
 #import "IGListAssert.h"
-#import "IGListIndexSetResult.h"
+#import "IGListBatchUpdateData.h"
+#import "IGListCompatibility.h"
 #import "IGListDiff.h"
+#import "IGListDiffable.h"
+#import "IGListExperiments.h"
+#import "IGListIndexPathResult.h"
+#import "IGListIndexSetResult.h"
+#import "IGListKit.h"
+#import "IGListMacros.h"
+#import "IGListMoveIndex.h"
+#import "IGListMoveIndexPath.h"
 #import "NSNumber+IGListDiffable.h"
 #import "NSString+IGListDiffable.h"
-#import "IGListMoveIndexPath.h"
-#import "IGListMoveIndex.h"
-#import "IGListIndexPathResult.h"
-#import "IGListBatchUpdateData.h"
-#import "IGListDiffable.h"
-#import "IGListMacros.h"
-#import "IGListExperiments.h"
-#import "IGListKit.h"
 
 FOUNDATION_EXPORT double IGListKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char IGListKitVersionString[];
